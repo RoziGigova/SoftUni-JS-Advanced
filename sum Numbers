@@ -1,0 +1,13 @@
+function sumNumbers (n, m) {
+
+    let Number1 = Number (n);
+    let Number2 = Number (m);
+
+    let sum = 0;
+
+    for (let i=Number1; i<=Number2; i++) {
+        sum += Number (i);
+        
+    }
+    console.log (sum);
+}
