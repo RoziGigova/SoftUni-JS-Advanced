@@ -1,0 +1,15 @@
+function squareStars (num) {
+
+        for (let i=1; i<=num; i++) {
+                let row = '* '.repeat (num);
+                
+                console.log (row.trim ());
+            }
+            
+}
+
+
+//squareStars (1);
+//squareStars (2);
+squareStars (5);
+// squareStars (7);
