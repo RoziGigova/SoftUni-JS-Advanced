@@ -1,0 +1,10 @@
+function wordUppercase (text) {
+    let transformText = text.toUpperCase ();
+    let wordArray = transformText.split (/\W+/);
+    let filterText = wordArray.filter (x => !!x);
+
+    console.log (filterText.join (', '));
+
+}
+wordUppercase ('Hi, how are you?');
+wordUppercase ('hello');
