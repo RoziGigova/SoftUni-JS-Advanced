@@ -1,0 +1,16 @@
+function sumFirstLast (arr) {
+
+        
+    
+        let firstEl = arr [0];
+    
+        let lastEl = arr [arr.length-1]; 
+        
+        let sum = Number (firstEl) + Number (lastEl);
+       
+
+    
+    console.log (sum);
+}
+sumFirstLast (['20', '30', '40']);
+sumFirstLast (['5', '10']);
