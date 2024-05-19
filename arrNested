@@ -1,0 +1,21 @@
+function arrNested (arr, str) {
+
+let result = '';
+    for (let i=0; i<arr.length; i++) {
+        result += arr [i] + str;
+    }
+console.log (result.slice (0, -1));
+}
+
+arrNested (['One',
+
+'Two',
+
+'Three',
+
+'Four',
+
+'Five'],
+
+'-');
+// arrNested (['How about no?', 'I', 'will', 'not', 'do', 'it!'], '_');
