@@ -1,0 +1,25 @@
+function rotate (arr, number) {
+    
+    
+    for (let i=0; i<number; i++) {
+        
+        let lastNum = arr.pop ();
+        let arr1 = arr.unshift (lastNum);
+    }
+
+    let string="";
+    for(let i=0;i<arr.length;i++){
+        string+=(arr[i])+" ";
+    }
+    console.log(string);
+}
+
+rotate (['1',
+
+'2',
+
+'3',
+
+'4'],
+
+2);
