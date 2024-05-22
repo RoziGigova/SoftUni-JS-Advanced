@@ -1,0 +1,24 @@
+function addRevomeEl (commands) {
+
+    let array = [];
+    let currentNumber = 1;
+
+    for (let command of commands) {
+        if (command === 'add') {
+        array.push (currentNumber);
+        } else if (command === 'remove') {
+        array.pop ();
+        }
+        currentNumber ++;
+    }  
+
+    if (array.length === 0) {
+        console.log ('Empty');
+    } else {
+        array.forEach (number => console.log (number));
+    }
+}
+
+addRevomeEl (['add', 'add', 'add', 'add']);
+
+addRevomeEl ['add', 'add', 'remove', 'add', 'add'];
