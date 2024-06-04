@@ -7,5 +7,10 @@ function riskiOperation () {
     return 'Task successful!';
 }
 
-const result = riskiOperation ();
-console.log (result);
+try {
+
+    const result = riskiOperation ();
+    console.log (result);
+} catch (err) {
+    console.log ('Error here');
+}
