@@ -1,0 +1,11 @@
+function riskiOperation () {
+    if (Math.random() < 0.5) {
+        throw new Error ('task failed!');
+
+    }
+
+    return 'Task successful!';
+}
+
+const result = riskiOperation ();
+console.log (result);
