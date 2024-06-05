@@ -1,0 +1,19 @@
+function sortNumbers (arr) {
+    return arr.slice().sort((a,b) => a-b);
+}
+
+function testSortNumbers () {
+    const input = [2, 5, 1, 9, 3];
+
+    const actualResult = sortNumbers (input);
+    const expectedResult = [1, 2, 3, 5, 9];
+
+    if (JSON.stringify (actualResult) === JSON.stringify (expectedResult)) {
+        console.log ('Success');
+    } else {
+        console.log ('Fail');
+        console.log (`Expected ${JSON.stringify (actualResult)} to be iqual to ${JSON.stringify (expectedResult)}`)
+    }
+}
+
+testSortNumbers ();
