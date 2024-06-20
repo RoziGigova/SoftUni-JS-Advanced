@@ -1,0 +1,13 @@
+import { expect } from "chai";
+import { sum } from "../test/sum.js";
+
+describe ('sum', () => {
+    it ('Schould return the sum of numbers', () => {
+        const input = [1,2,3,4];
+        const expectedResult = 10;
+        const actualResult = sum (input);
+        expect (actualResult).to.equal(expectedResult);
+
+    });
+
+});
